@@ -32,15 +32,17 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <ApplicationIcon>Image\Logo.ico</ApplicationIcon>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Image\Logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
