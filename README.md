@@ -1,8 +1,8 @@
 Ion.Tools.Convert
 ![](https://img.shields.io/badge/style-Stable-green.svg?style=flat&label=Build)
-![](https://img.shields.io/badge/style-1.1-blue.svg?style=flat&label=Version)
+![](https://img.shields.io/badge/style-1.2-blue.svg?style=flat&label=Version)
 ---
- <img src="https://github.com/ionsharp/Ion.Tools.Convert/blob/main/Image/LogoWide.png?raw=true"/>
+ <img src="https://github.com/ionsharp/Ion.Tools.Convert/blob/main/Image/Logo900.png?raw=true"/>
 
 Wiki ![](https://img.shields.io/badge/style-Coming%20soon!-red.svg?style=flat&label=)
 ---

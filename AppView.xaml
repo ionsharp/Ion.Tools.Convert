@@ -1,0 +1,51 @@
+﻿<i:AppToolView x:Class="Ion.Tools.Convert.AppView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://i.on/wpf" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Ion.Tools.Convert"
+    mc:Ignorable="d"
+    MaxHeight="720"
+    Title="Convert" 
+    ResizeMode="NoResize"
+    SizeToContent="Height"
+    Style="{DynamicResource {x:Type i:AppToolView}}"
+    Width="540"
+    WindowStartupLocation="CenterScreen">
+    <Grid i:XGrid.AutoRows="True"
+        i:XGrid.Rows="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" 
+        i:XPanel.Spacing="0,0,0,5"
+        Margin="10">
+        <i:ResultControl Content="{Binding Result}"
+            Visibility="{i:Bind Result, Convert=i:ConvertObjectToVisibility}"/>
+
+        <Label FontWeight="Bold">Convert from</Label>
+        <ComboBox SelectedIndex="{Binding ConvertFrom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ComboBoxItem>png</ComboBoxItem>
+        </ComboBox>
+
+        <Label FontWeight="Bold">Convert to</Label>
+        <ComboBox SelectedIndex="{Binding ConvertTo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ComboBoxItem>ico</ComboBoxItem>
+        </ComboBox>
+
+        <Label FontWeight="Bold">Source file</Label>
+        <i:PathBox Text="{Binding FilePathOld, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            CanBrowse="True"
+            BrowseMode="OpenFile"/>
+
+        <Label FontWeight="Bold">Destination folder</Label>
+        <i:PathBox Text="{Binding FolderPathNew, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            CanBrowse="True"
+            BrowseMode="OpenFolder"/>
+
+        <Label FontWeight="Bold">Destination file</Label>
+        <TextBox Text="{Binding FilePathNew, Mode=OneWay}" 
+            IsReadOnly="True"/>
+
+        <Button Content="Convert"
+            Command="{Binding DoCommand}"
+            Style="{DynamicResource {x:Static i:XButton.GreenButton}}"/>
+    </Grid>
+</i:AppToolView>

@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <AssemblyName>Ion.Tools.Convert</AssemblyName>
+    <AssemblyName>Convert</AssemblyName>
     <AssemblyTitle>Ion.Tools.Convert</AssemblyTitle>
     <RootNamespace>Ion.Tools.Convert</RootNamespace>
   </PropertyGroup>
@@ -32,7 +32,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <ApplicationIcon>Image\Logo.ico</ApplicationIcon>
+    <ApplicationIcon>Image\Logo512.ico</ApplicationIcon>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
   </PropertyGroup>
@@ -46,13 +46,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Image\Logo.ico" />
+    <Content Include="Image\Logo512.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.5.1" />
     <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.8.2" />
     <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Remove="App.xaml" />
+    <Page Include="App.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +72,7 @@
 
   <ItemGroup>
     <Resource Include="Image\Folder.png" />
+    <Resource Include="Image\Logo16.png" />
   </ItemGroup>
 
 </Project>
