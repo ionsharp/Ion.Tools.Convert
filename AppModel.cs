@@ -7,4 +7,4 @@ using System.Threading.Tasks;
 
 namespace Ion.Tools.Convert;
 
-public record class AppModel() : AppModelBase();
+public record class AppModel() : AppToolModel();

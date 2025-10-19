@@ -9,13 +9,11 @@ namespace Ion.Tools.Convert;
 
 /// <summary>The internal format of an icon. Images larger than 256px are always stored as PNG.</summary>
 /// <remarks>https://redketchup.io/icon-converter</remarks>
-[Serializable]
 public enum InternalIconFormat
 {
     BMP4, BMP8, BMP24, BMP32, PNG32
 }
 
-[Serializable]
 public record class IconSize : Model
 {
     public bool Size16 { get => Get(true); set => Set(value); }
@@ -65,7 +63,6 @@ public record class IconSize : Model
     }
 }
 
-[Serializable]
 public record class ConvertToICO() : ConvertTo()
 {
     enum Group { Resize, Sizes }

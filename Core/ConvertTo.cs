@@ -3,7 +3,6 @@ using Ion.Core;
 
 namespace Ion.Tools.Convert;
 
-[Serializable]
 public abstract record class ConvertTo() : Model()
 {
     public abstract TargetTypes Type { get; }
